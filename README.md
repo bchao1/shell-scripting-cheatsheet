@@ -9,10 +9,21 @@ Usually the shell is located in the `./bin` directory, the `!#` is followed by t
 ```
 #!./bin/bash
 ```
-After we have configured the shell to run our script, we can start writing our first shell script.
-
-## Basic Printing 
-To print something one the terminal, we use the command `echo`
+After we have configured the shell to run our script, we can start writing our first shell script. To print something one the terminal, we use the command `echo`. In your script, type
 ```
 echo Hello World
 ```
+To run the shell script, simply type `./<name of the script>` in your terminal. In my case, I named by shell script `first_script.sh`.
+```
+$ ./first_script.sh
+```
+In the terminal, you should see 
+```
+$ ./first_script.sh
+Hello World
+$
+```
+You have now written your first shell script!
+
+## Basic Printing
+
