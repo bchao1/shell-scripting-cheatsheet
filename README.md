@@ -26,4 +26,11 @@ $
 You have now written your first shell script!
 
 ## Basic Printing
-
+As seen in the example above, the `echo` command is to print something on the terminal. It is essentially the same as `print` in **Python** (since Python is also a scripting language, it is obvious to make this analogy). The content following `echo`, or any other shell commands, are called **arguments**. 
+```
+$ echo Hello World
+Hello World
+$ echo Hello     World
+Hello World
+```
+Before the shell executes a command, it first *parses* the command. The first token in the command is the *action* the shell makes, and the following tokens, seperated by whitespaces, are the arguments. In both examples above, `echo` is the action (print something), and the arguments are `Hello` and `World`. `echo` prints the arguments seperated by a space, hence the result.
