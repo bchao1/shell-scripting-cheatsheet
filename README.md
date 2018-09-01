@@ -1,5 +1,10 @@
 # Basic-Shell-Scripting-Tutorial
 
+## Contents 
+- First Script
+- Basic Printing
+- Variables
+
 ## First Script
 Since there are various kinds of shells in a Unix system, we usually define the type of shell we want to use in our shell script before we actually get into the main content. In the first line of your script, type
 ```
