@@ -4,6 +4,8 @@
 - First Script
 - Basic Printing
 - Variables
+- Loops
+- Special character usage: `$`, `*`, and etc.
 
 ## First Script
 Since there are various kinds of shells in a Unix system, we usually define the type of shell we want to use in our shell script before we actually get into the main content. In the first line of your script, type
@@ -84,6 +86,9 @@ $ ./test.sh
 What is your name? Brian
 Hello Brian
 ```
+### Variable Scopes
+
+## Loops
 
 
 
