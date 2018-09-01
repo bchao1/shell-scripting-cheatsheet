@@ -41,3 +41,10 @@ $ echo "Hello     World"
 Hello     World
 ```
 `echo` now treats `Hello     World` as one argument, and thus we can preserve the whitespaces between the words.
+
+## Variables 
+Like any other programming language, we can also assign values to **variables** in shell scripts. Consider the following commad
+```
+$ var=10
+```
+
