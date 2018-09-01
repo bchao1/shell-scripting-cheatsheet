@@ -33,18 +33,53 @@ Hello World
 $ echo Hello     World
 Hello World
 ```
-Before the shell executes a command, it first *parses* the command. The first token in the command is the *action* the shell makes, and the following tokens, seperated by whitespaces, are the arguments. In both examples above, `echo` is the action (print something), and the arguments are `Hello` and `World`. `echo` prints the arguments seperated by a space, hence the result.
+Before the shell executes a line, it first *parses* the line. The first token in the line is the *command*, and the following tokens, seperated by whitespaces, are the arguments. In both examples above, `echo` is the command (print something), and the arguments are `Hello` and `World`. `echo` prints the arguments seperated by a space, hence the result.
 
-To print several spaces between words, we enclose the string we wich to print with `"`.
+To preserve the whitespaces between the two words, we enclose the string we wish to print with `"`.
 ```
 $ echo "Hello     World"
 Hello     World
 ```
-`echo` now treats `Hello     World` as one argument, and thus we can preserve the whitespaces between the words.
+`echo` now treats `"Hello     World"` as a single argument.
 
 ## Variables 
-Like any other programming language, we can also assign values to **variables** in shell scripts. Consider the following commad
+Like any other programming language, we can also assign values to **variables** in shell scripts. Consider the following command
 ```
 $ var=10
 ```
+The value `10` is **assigned** to the **variable** `var`. 
+Note that no spaces should appear around `=`. For the line 
+```
+$ var = 10
+```
+The shell would treat `var` as a command and `=`, `10` as arguments. Apparently there are no shell commands named `var`, hence you would recieve an error message
+```
+$ var = 10
+var: no command found
+```
+Printing the value of the variable is similar to printing a string, except we add a `$` in front of the variable.
+```
+$ echo "The value of var is $var"
+The value of var is 10
+```
+The command `read` assigns user input to a variable. Type the following in your shell script, then run the script on the terminal.
+``` 
+echo "What is your name?"
+read USERNAME
+echo "Hello $USERNAME
+```
+You should see the following
+```
+$ ./test.sh
+What is your name? 
+```
+Enter your name and see
+```
+$ ./test.sh
+What is your name? Brian
+Hello Brian
+```
+
+
+
 
