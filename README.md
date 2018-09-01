@@ -1,6 +1,6 @@
 # Basic-Shell-Scripting-Tutorial
 
-## Contents 
+## Table of Contents 
 - First Script
 - Basic Printing
 - Variables
