@@ -34,3 +34,10 @@ $ echo Hello     World
 Hello World
 ```
 Before the shell executes a command, it first *parses* the command. The first token in the command is the *action* the shell makes, and the following tokens, seperated by whitespaces, are the arguments. In both examples above, `echo` is the action (print something), and the arguments are `Hello` and `World`. `echo` prints the arguments seperated by a space, hence the result.
+
+To print several spaces between words, we enclose the string we wich to print with `"`.
+```
+$ echo "Hello     World"
+Hello     World
+```
+`echo` now treats `Hello     World` as one argument, and thus we can preserve the whitespaces between the words.
