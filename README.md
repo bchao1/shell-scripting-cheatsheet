@@ -89,6 +89,26 @@ Hello Brian
 ### Variable Scopes
 
 ## Loops
+Most shells support the `while` and `for` loop, just like any other programming language.
+### For loops
+`for` loops itereate through a list of values. Try to run the following script on your terminal
+```
+for NUMBER in 1 2 3 4 5
+do 
+echo "NUMBER is $NUMBER"
+done
+```
+You should see
+```
+$ ./test.sh
+NUMBER is 1
+NUMBER is 2
+NUMBER is 3
+NUMBER is 4
+NUMBER is 5
+```
+In each iteration, the variable (should be defined between `for` and `in`) will be assigned to one of the arguments in the argument list (located after `in`). 
+
 
 
 
