@@ -111,6 +111,21 @@ In each iteration, the variable (should be defined between `for` and `in`) will 
 It is recommended to indent the content between `do` and `done` for clarity.
 
 ### `while` loops
+The syntax of a basic while loop is as follows 
+```
+while [ test ]
+do
+  ...
+done
+```
+`[test]` is the **condition** that the loop checks every iteration. **Tests** will be introduced in the next chapter. For now, we try to implement an infinite loop, where the condition is replaced by a `*`, indicating *true* for every iteration.
+```
+while *
+do 
+  echo "This is an infinite loop!"
+done
+```
+
 
 
 
