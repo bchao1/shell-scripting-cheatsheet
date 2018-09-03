@@ -5,6 +5,7 @@
 - Basic Printing
 - Variables
 - Loops
+- Tests
 - Special character usage: `$`, `*`, and etc.
 
 ## First Script
@@ -126,6 +127,17 @@ do
 done
 ```
 
+### Tests `[   ]`
+**Conditional statements** are essential elements in any programming language. In shell scripts, conditional statements are enclosed by two middle brackets `[   ]`; for example:
+```
+var=100 # var is assigned to 100
+if [ var = 100 ] # checks if var equals to 100
+then 
+  echo "var is 100"
+else
+  echo "var is not 100"
+fi
+```
 
 
 
