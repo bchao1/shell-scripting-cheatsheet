@@ -138,7 +138,11 @@ else
   echo "var is not 100"
 fi
 ```
-
+Note that in test statements, brackets must be surrounded by spaces. That is, 
+```
+if' '[' 'var' '=' '100' ']
+```
+is the **only** correct format for test statements. Note that `=` here refers to equality, and needs to be surrounded by spaces too, which is different from assignment.
 
 
 
