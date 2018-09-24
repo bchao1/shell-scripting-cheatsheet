@@ -1,4 +1,4 @@
-# Basic-Shell-Scripting-Tutorial
+# Shell-Scripting-CheatSheet
 
 ## Table of Contents 
 - First Script
